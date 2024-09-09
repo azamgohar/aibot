@@ -128,7 +128,7 @@ function handleOutgoingChat() {
 
     const html = `
             <div class="message_content">
-                <img src="images/User-Icon-removebg-preview.png" alt="User Image" class="avatar">
+                <img src="images/user.png" alt="User Image" class="avatar">
                 <p class="text"></p>
             </div>`;
 
