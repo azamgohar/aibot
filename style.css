@@ -23,9 +23,12 @@
     --text-color: #222;
     --subheading-color: #A0A0A0;
     --placeholder-color: #6C6C6C;
-    --primary-color: #FFF;
-    --secondary-color: #E9EEF6;
-    --secondary-hover-color: #DBE1EA;
+    --primary-color: #E9EEF6;
+    /* --secondary-color: #fff3f7; */
+    /* --secondary-color: #faebf0a4; */
+    --secondary-color: #d0ffbe69;
+    /* --secondary-hover-color: #fde4eda4; */
+    --secondary-hover-color: #d7ddfca4;
 }
 
 html, body {
@@ -59,17 +62,23 @@ body.hide_header .header{
 }
 
 .header .title {
+    margin-top: 1rem;
     font-size: 2.7rem;
     width: fit-content;
     background-clip: text;
-    background: linear-gradient(to right, #4285f4, #d96570);
+    background: linear-gradient(to right, #31f762, #00ccffab, #0044ffab);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .header .subtitle {
     font-size: 2.4rem;
-    color: var(--subheading-color);
+    /* color: var(--subheading-color); */
+    width: fit-content;
+    background-clip: text;
+    background: linear-gradient(to right, #0044ffab, #00ccffab, #31f762);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .suggession_list {
@@ -91,8 +100,9 @@ body.hide_header .header{
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    border-radius: 0.75rem;
+    border-radius: 0.25rem;
     background: var(--secondary-color);
+    /* background: #E9EEF6; */
 }
 
 .suggession_list .suggession:hover {
@@ -201,7 +211,8 @@ body.hide_header .header{
     height: 11px;
     width: 100%;
     border-radius: 0.14rem;
-    background: linear-gradient(to right, #4285f4, var(--primary-color), #4285f4);
+    background: linear-gradient(to right, #31f762, var(--primary-color), #4285f4, var(--primary-color), #31f762);
+    /* background: linear-gradient(to right, #4285f4, #4285f4); */
     animation: animate 3s linear infinite;
 }
 
@@ -245,7 +256,7 @@ body.hide_header .header{
     outline: none;
     font-size: 1rem;
     color: var(--text-color);
-    border-radius: 6.2rem;
+    border-radius: 0.25rem;
     padding: 1.1rem 4rem 1.1rem 1.5rem;
     background: var(--secondary-color);
 }
